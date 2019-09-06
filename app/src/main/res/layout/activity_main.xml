@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8069B804"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lastnamelabel"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="last name :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:ems="10"
+            android:hint="input last name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/firstnamelabel"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="first name :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="input first name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="telephone :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:ems="10"
+            android:hint="input phone number"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BD3D7740"
+        android:onClick="onclick"
+        android:text="submit" />
+
+    <TextView
+        android:id="@+id/txv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+</LinearLayout>
